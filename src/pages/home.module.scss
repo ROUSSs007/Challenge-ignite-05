@@ -1,1 +1,54 @@
-// TODO
+.postsContainer {
+
+  .posts {
+    max-height: 110px;
+    display: block;
+    text-decoration: none;
+    color: var(--body);
+
+    p {
+      line-height: 2rem;
+    }
+
+    & + .posts {
+      margin-top: 3rem
+    }
+
+    .subInfo {
+      display: flex;
+      margin-top: 0.5rem;
+
+      p {
+        font-size: 0.75rem;
+
+        svg {
+          font-size: 0.8rem;
+        }
+
+        & + p {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  .nextPageButton {
+    border: 0;
+    background: none;
+    color: var(--highlight);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.36rem;
+    margin-top: 4rem;
+    transition: filter 0.2s;
+    cursor: pointer;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}

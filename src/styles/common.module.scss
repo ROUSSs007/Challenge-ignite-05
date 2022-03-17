@@ -1,1 +1,16 @@
-// TODO
+.container {
+  max-width: 900px;
+  background-color: var(--background);
+  margin: 0 auto;
+  color: var(--heading);
+  font-family: 'Inter';
+
+  h1 {
+    font-size: 1.75rem;
+    color: var(--heading);
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+}
